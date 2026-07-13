@@ -26,6 +26,8 @@ created restore.txt file using touch restore.txt.
 add content to restore.txt using vi.restore.txt.
 git add command and git commit commands used to add and commit git add restore.txt and git commit -m ""
 pushed the repository to git hub using git push.
+using git restore --staged  command to unstage or to undo the content in a file
+
 
 
 ## git log : it is used to display the commit history of a git repository. It shows all the commits made in the repository.
