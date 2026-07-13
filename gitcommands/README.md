@@ -31,11 +31,9 @@ add content a file then move to staging area before commit we use git restore --
 git add command and git commit commands used to add and commit git add restore.txt and git commit -m ""
 pushed the repository to git hub using git push.
 
-
 vi restore.txt
 add content
 git restore restore.txt (content remove from working dairectory)
-
 
 vi restore.txt
 add content
