@@ -4,7 +4,6 @@
 
  README.md: Documentation about my git practice.
 
- 
 Git installation
 Git initialization using git init command
 Git status
@@ -15,7 +14,9 @@ Git push
 
 COMMANDS :
 
-## git restore: The git restore command is used to restore the contents of a file in working dairectory, or discard unwanted changes. undo content in the file.
+## git restore: The git restore command is used to undo the cintents are discard changes in aworking dairectory
+   git restore --staged restore.txt   after git add to unstage staging area to working area
+
 Syntax : 
         git restore  undo or remove the content in working directory
         git restore --staged restore.txt after git add to unstage staging area to working area
@@ -24,22 +25,26 @@ Steps:
 Created a GitHub Repository. "myfirstrepository"
 Initialized a local git repository using "git init"
 created restore.txt file using touch restore.txt.
-add content to restore.txt using vi.restore.txt.
+add content to restore.txt using vi.restore.txt.to check git status it is modified 
+give a command  git restore restore.txt the content is undo
+add content a file then move to staging area before commit we use git restore --staged restore.txt the stage is moved to working area from staging area
 git add command and git commit commands used to add and commit git add restore.txt and git commit -m ""
 pushed the repository to git hub using git push.
-using git restore --staged  command to unstage or to undo the content in a file
+
+
+vi restore.txt
+add content
+git restore restore.txt (content remove from working dairectory)
 
 
 vi restore.txt
 add content
 git add restore.txt
-git commit -m "this is my first commit"
-git restore --staged restore.txt (content undo in gitbash or unstaged)
-git status 
-content undo
+git restore --staged restore.txt(changes to workkkking area from staging area)
+git status
 git add restore.txt
 git commit -m "this commit changes"
-git push (content undo in repository)
+git push
 
 
 ## git log : it is used to display the commit history of a git repository. It shows all the commits made in the repository.
