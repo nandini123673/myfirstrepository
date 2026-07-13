@@ -3,7 +3,7 @@
 ## Topics covered : git restore, git log, git clone, git branches pull request, git pull, git fetch, git revert, git fork, git stash, .gitignore, git diff, git conflict.
 
  README.md: Documentation about my git practice.
- restore.txt: Practice file
+
  
 Git installation
 Git initialization using git init command
@@ -18,7 +18,6 @@ COMMANDS :
 ## git restore: The git restore command is used to restore the contents of a file or discard unwanted changes.
 Syntax :
         git restore --staged restore.txt
-        filename: git restore.txt Practice file for the git restore command
 
 Steps:
 Created a GitHub Repository.
@@ -32,11 +31,11 @@ pushed the repository to git hub using git push.
 ## git log : it is used to display the commit history of a git repository. It shows all the commits made in the repository.
 syntax : 
         git log
-        file name: restore.txt : Practice file for the git log command.
+       
 Steps :
 Created a GitHub Repository.
 Initialized a local git repository using git init
-open restore.txt file using cat restore.txt. the content is visible already in that file.
+open  file using cat  the content is visible already in that file.
 git add command and git commit commands used to add and commit git add restore.txt and git commit -m ""
 pushed the repository to git hub using git push.
 used git log command to display commit history.
