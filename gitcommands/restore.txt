@@ -1,2 +1,3 @@
 i this is nandini
-i am from chitradurga
+i am from chitradurg
+hai welcome to gitbash and github
