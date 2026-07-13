@@ -15,9 +15,10 @@ Git push
 
 COMMANDS :
 
-## git restore: The git restore command is used to restore the contents of a file or discard unwanted changes. undo content in the file.
-Syntax :
-        git restore --staged restore.txt
+## git restore: The git restore command is used to restore the contents of a file in working dairectory, or discard unwanted changes. undo content in the file.
+Syntax : 
+        git restore  undo or remove the content in working directory
+        git restore --staged restore.txt after git add to unstage staging area to working area
 
 Steps:
 Created a GitHub Repository. "myfirstrepository"
