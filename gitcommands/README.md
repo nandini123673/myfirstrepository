@@ -15,7 +15,7 @@ Git push
 
 COMMANDS :
 
-## git restore: The git restore command is used to restore the contents of a file or discard unwanted changes.
+## git restore: The git restore command is used to restore the contents of a file or discard unwanted changes. undo content in the file.
 Syntax :
         git restore --staged restore.txt
 
@@ -27,6 +27,18 @@ add content to restore.txt using vi.restore.txt.
 git add command and git commit commands used to add and commit git add restore.txt and git commit -m ""
 pushed the repository to git hub using git push.
 using git restore --staged  command to unstage or to undo the content in a file
+
+
+vi restore.txt
+add content
+git add restore.txt
+git commit -m "this is my first commit"
+git restore --staged restore.txt (content undo in gitbash or unstaged)
+git status 
+content undo
+git add restore.txt
+git commit -m "this commit changes"
+git push (content undo in repository)
 
 
 ## git log : it is used to display the commit history of a git repository. It shows all the commits made in the repository.
