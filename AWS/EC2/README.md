@@ -6,14 +6,18 @@ LAB 1: Launching a sample website using virtual machine in windows.
 
 LAB 2: Finding a instance type according to client requirement.
 
-LAB 3: Vertical Scaling 
+LAB 3: Vertical Scaling
 
-LAB 4: Termination Protection 
+LAB 4: Termination Protection
 
 LAB 5: adding tags into the servers
 
+LAB 6: Snapshot and AMI creation data migration
+
+
 
 Service :EC2
+
 
 
 LAB 1: Launching a sample website using virtual machine in windows.
@@ -28,6 +32,7 @@ select security group
 click launch instance
 
 
+
 Step 2:
 
 select the instance
@@ -38,6 +43,7 @@ copy password paste in notepad
 connect using remote desktop
 give password then connect
 virtual machine is created
+
 
 
 Step 3:
@@ -68,13 +74,14 @@ paste it in google
 now we got website
 
 
+
 LAB 2: Finding a instance type according to client requirement.
 
-Step 1: 
+Step 1:
 
 login to aws console
-select ec2 instance 
-select regaion 
+select ec2 instance
+select regaion
 click launch instance
 give name to the server
 select operating system
@@ -83,15 +90,16 @@ review the configuration, search aws pricing calculator in that we same server n
 launch the ec2 instance
 
 
+
 LAB 3: Vertical Scaling : increasing or decreasing the resources of a single server increase cpu increase ram or storage thi is scale up reduce is called scale down
 
 current ec2 instance t2.micro 1vcpu and 1gb ram
 scale up to t3.large 2vcpus 8gb ram
- 
+
 Step 1:
 
-login to aws console using EC2 create instance 
-select regaion click launch instance 
+login to aws console using EC2 create instance
+select regaion click launch instance
 give server name select amazon Linux
 select instant type create key pair
 select security group
@@ -100,8 +108,9 @@ select the ec2 instance to scale up
 click instant state then stop the instance first
 click actions go to instance settings, select a new instant type
 to change instant type ex now t2.micro i changed t3.micro
-click applay 
+click applay
 start the instance verify is running with the new instance type
+
 
 
 LAB 4: Termination Protection
@@ -114,30 +123,30 @@ select instance type create key pair
 select security group
 click launch instance
 
-Step 2: 
+Step 2:
 
-select running instance 
+select running instance
 stop the instance using instance state option
 select actions select instance settings click change termination protection
-choose enable option 
+choose enable option
 click and save.
 
 verification:
 
-select ec2 instance 
-click instance state terminate the instance 
-aws display an error message 
+select ec2 instance
+click instance state terminate the instance
+aws display an error message
 disable termination protection realy want to terminate the instance
 
 LAB 5: adding tags into the servers: the instance can be easily identified using assigned tags
 
 Step 1:
 sign in to the aws console
-select regaion launch instance 
+select regaion launch instance
 click instance
-select the ec2 instance 
-go to the tags, 
-click manage tags 
+select the ec2 instance
+go to the tags,
+click manage tags
 click add new tag
 enter the key and value.
 click and save.
@@ -147,13 +156,59 @@ the tags are sucsesfully assigned
 
 
 
+Lab 6:Snapshot and AMI creation Data migration
 
 
 
 
 
+Step 1:
+
+login to aws console
+
+create two instances using different regaions
+
+select one instance and create virtual machine
+
+create folders on virtual machine
+
+select snapshot option create snapshot 
+
+select snapshot and click actions select copy snapshot
+
+copied for destination server
 
 
+
+Step 2:
+
+
+
+select copied snapshot and click actions select create image from snapshot option 
+
+give image name select create image option
+
+image  created in AMI
+
+
+
+Step 3:
+
+
+
+open AMI select AMI then click launch instance from AMI
+
+give AMI image name
+
+create keypair
+
+allow security group rules
+
+launch instance
+
+select instance connect through RDP use previous password  create a virtual machine 
+
+vm is created
 
 
 
