@@ -7,7 +7,7 @@
 │── gitcommands/README.md
 └── linux/README.md
 
-AWS :
+📂AWS :
 - Compute Services (EC2, Lightsail)
 - Storage Services (S3, EBS, EFS)
 - Networking (VPC, Internet Gateway, NAT Gateway, VPC Peering)
@@ -43,7 +43,7 @@ Labs Included :
 - Route 53
 - RDS
 
-DevOps
+📂DevOps
 - Jenkins
 - Docker
 - Kubernetes
@@ -51,7 +51,7 @@ DevOps
 - Maven
 
 
-Git & GitHub
+📂Git & GitHub
 - Git Installation
 - Git Commands
 - Branching
@@ -60,7 +60,7 @@ Git & GitHub
 - GitHub Repository
 
 
- Linux
+ 📂Linux
 - Linux Commands
 - File Permissions
 - Users & Groups
