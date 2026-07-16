@@ -1,5 +1,6 @@
 AWS, DEVOPS, GIT, GITHUB, LINUX, LEARNING REPOSITORY README.md 
 
+AWS :
 - Compute Services (EC2, Lightsail)
 - Storage Services (S3, EBS, EFS)
 - Networking (VPC, Internet Gateway, NAT Gateway, VPC Peering)
@@ -13,7 +14,7 @@ AWS, DEVOPS, GIT, GITHUB, LINUX, LEARNING REPOSITORY README.md
 - Static Website Hosting
 
 
-Labs Included
+Labs Included :
  IAM
  EC2
  S3
@@ -25,8 +26,8 @@ Labs Included
  Load Balancer
  Auto Scaling
 
- AWS Services Used
- 
+
+ AWS Services Used :
 - IAM
 - EC2
 - S3
