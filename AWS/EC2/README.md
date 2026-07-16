@@ -162,15 +162,7 @@ enter the key and value.
 click and save.
 the tags are sucsesfully assigned
 
-
-
-
-
 Lab 6:Snapshot and AMI creation Data migration
-
-
-
-
 
 Step 1:
 
@@ -193,7 +185,6 @@ copied for destination server
 Step 2:
 
 
-
 select copied snapshot and click actions select create image from snapshot option
 
 give image name select create image option
@@ -203,7 +194,6 @@ image  created in AMI
 
 
 Step 3:
-
 
 
 open AMI select AMI then click launch instance from AMI
@@ -247,7 +237,6 @@ click launch instance
 Step 2:
 
 
-
 connect instance using mobaxterm 
 
 select instance 
@@ -271,66 +260,37 @@ instance is connected in mobaxterm.
 Step 3:
 
 
-
 give the command cd Downloads
 
 ssh ec2-user@publicip -i keypairname.pem
 
-
-
 ex : ssh ec2-user@13.229.199.216 -i serverkey.pem
-
-
 
 sudo dnf update -y
 
-
-
 sudo dnf install httpd -y
-
-
 
 sudo systemctl start httpd
 
-
-
 sudo systemctl enable httpd
-
-
 
 sudo sysytemctl ststus httpd
 
-
-
 cd var/www/html
-
-
 
 sudo vi index.html
 
-
-
 enter cintent in vi editor then save it 
-
-
 
 go to instance copy public ip then search in google
 
-
-
 website is appear
-
-
-
 
 
 LAB 8: Identity access Management
 
 
-
 Step 1:
-
-
 
 loged in to aws management server 
 
@@ -351,6 +311,38 @@ enable mfa for additional security
 if try to log in everytime mfa will ask code
 
 created iam users, groups and roles and copy permissions 
+
+
+LAB 9: Cloud watch and light sail
+
+Step 1: 
+
+create ec2 instance using linux operating system
+open cloudwatch create alarams
+click create alaram
+click select metric select ec2  per instance metric cpu utillization 
+
+
+Step 2:
+
+click config notification in that alaram state in alaram
+create new topic topic name enail
+if we waqnt the alaram stop reboot or terminate the instance we can add an ec2 action to the alaram
+
+
+open emain inboxfind the email from aws sns
+click confirm subscription
+
+
+give alaram name click next
+connect our ec2 instance and run 
+while true; do echo; done this command increases the cpu utillazation
+
+
+the ec2 instance continuees running because you only configured a notification not an ec2 action.
+
+
+
 
 
 
