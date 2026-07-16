@@ -14,6 +14,16 @@ LAB 5: adding tags into the servers
 
 LAB 6: Snapshot and AMI creation data migration
 
+LAB 7: Hosting sample website using Linux 
+
+LAB 8: Identity access Management
+
+LAB 9: Cloud watch and light sail\\
+
+LAB 10: Load balancer and auto scalling
+
+
+
 
 
 Service :EC2
@@ -172,7 +182,7 @@ select one instance and create virtual machine
 
 create folders on virtual machine
 
-select snapshot option create snapshot 
+select snapshot option create snapshot
 
 select snapshot and click actions select copy snapshot
 
@@ -184,7 +194,7 @@ Step 2:
 
 
 
-select copied snapshot and click actions select create image from snapshot option 
+select copied snapshot and click actions select create image from snapshot option
 
 give image name select create image option
 
@@ -206,9 +216,205 @@ allow security group rules
 
 launch instance
 
-select instance connect through RDP use previous password  create a virtual machine 
+select instance connect through RDP use previous password  create a virtual machine
 
 vm is created
+
+
+
+LAB 7: Hosting sample website using Linux
+
+
+
+
+
+Step 1: 
+
+Lanch instance 
+
+select amazon Linux server 
+
+select instance type
+
+create key pair 
+
+select 3 security groups
+
+click launch instance
+
+
+
+Step 2:
+
+
+
+connect instance using mobaxterm 
+
+select instance 
+
+copy public ip and uswr name
+
+go to mobaxterm select sessions select  SSH paste public IP in remote host 
+
+give user name 
+
+select advanced ssh settings in that we upload private key of the instance 
+
+click ok 
+
+instance is connected in mobaxterm.
+
+
+
+
+
+Step 3:
+
+
+
+give the command cd Downloads
+
+ssh ec2-user@publicip -i keypairname.pem
+
+
+
+ex : ssh ec2-user@13.229.199.216 -i serverkey.pem
+
+
+
+sudo dnf update -y
+
+
+
+sudo dnf install httpd -y
+
+
+
+sudo systemctl start httpd
+
+
+
+sudo systemctl enable httpd
+
+
+
+sudo sysytemctl ststus httpd
+
+
+
+cd var/www/html
+
+
+
+sudo vi index.html
+
+
+
+enter cintent in vi editor then save it 
+
+
+
+go to instance copy public ip then search in google
+
+
+
+website is appear
+
+
+
+
+
+LAB 8: Identity access Management
+
+
+
+Step 1:
+
+
+
+loged in to aws management server 
+
+opened the IAM server
+
+created an IAM user
+
+assigned console access
+
+attached the required permissions
+
+created the IAM user
+
+loged in using the iam user credentials
+
+enable mfa for additional security 
+
+if try to log in everytime mfa will ask code
+
+created iam users, groups and roles and copy permissions 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
