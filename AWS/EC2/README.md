@@ -14,7 +14,7 @@ LAB 5: adding tags into the servers
 
 LAB 6: Snapshot and AMI creation data migration
 
-LAB 7: Hosting sample website using Linux 
+LAB 7: Hosting sample website using Linux
 
 LAB 8: Identity access Management
 
@@ -185,6 +185,7 @@ copied for destination server
 Step 2:
 
 
+
 select copied snapshot and click actions select create image from snapshot option
 
 give image name select create image option
@@ -194,6 +195,7 @@ image  created in AMI
 
 
 Step 3:
+
 
 
 open AMI select AMI then click launch instance from AMI
@@ -218,15 +220,15 @@ LAB 7: Hosting sample website using Linux
 
 
 
-Step 1: 
+Step 1:
 
-Lanch instance 
+Lanch instance
 
-select amazon Linux server 
+select amazon Linux server
 
 select instance type
 
-create key pair 
+create key pair
 
 select 3 security groups
 
@@ -237,19 +239,20 @@ click launch instance
 Step 2:
 
 
-connect instance using mobaxterm 
 
-select instance 
+connect instance using mobaxterm
+
+select instance
 
 copy public ip and uswr name
 
-go to mobaxterm select sessions select  SSH paste public IP in remote host 
+go to mobaxterm select sessions select  SSH paste public IP in remote host
 
-give user name 
+give user name
 
-select advanced ssh settings in that we upload private key of the instance 
+select advanced ssh settings in that we upload private key of the instance
 
-click ok 
+click ok
 
 instance is connected in mobaxterm.
 
@@ -258,6 +261,7 @@ instance is connected in mobaxterm.
 
 
 Step 3:
+
 
 
 give the command cd Downloads
@@ -280,19 +284,21 @@ cd var/www/html
 
 sudo vi index.html
 
-enter cintent in vi editor then save it 
+enter cintent in vi editor then save it
 
 go to instance copy public ip then search in google
 
 website is appear
 
 
+
 LAB 8: Identity access Management
+
 
 
 Step 1:
 
-loged in to aws management server 
+loged in to aws management server
 
 opened the IAM server
 
@@ -306,21 +312,23 @@ created the IAM user
 
 loged in using the iam user credentials
 
-enable mfa for additional security 
+enable mfa for additional security
 
 if try to log in everytime mfa will ask code
 
-created iam users, groups and roles and copy permissions 
+created iam users, groups and roles and copy permissions
+
 
 
 LAB 9: Cloud watch and light sail
 
-Step 1: 
+Step 1:
 
 create ec2 instance using linux operating system
 open cloudwatch create alarams
 click create alaram
-click select metric select ec2  per instance metric cpu utillization 
+click select metric select ec2  per instance metric cpu utillization
+
 
 
 Step 2:
@@ -330,13 +338,16 @@ create new topic topic name enail
 if we waqnt the alaram stop reboot or terminate the instance we can add an ec2 action to the alaram
 
 
+
 open emain inboxfind the email from aws sns
 click confirm subscription
 
 
+
 give alaram name click next
-connect our ec2 instance and run 
+connect our ec2 instance and run
 while true; do echo; done this command increases the cpu utillazation
+
 
 
 the ec2 instance continuees running because you only configured a notification not an ec2 action.
@@ -347,76 +358,25 @@ the ec2 instance continuees running because you only configured a notification n
 
 
 
+light sail :
 
 
 
+search lightsail create instance 
 
+connect using ssh use the commands
 
+sudo dnf update -y
 
+sudo dnf install httpd -y
 
+sudo systemctl start httpd
 
+sudo systemctl enable httpd
 
+sudo vi /var/www/html/index.html
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+copy paste ipv4 address in google.see the output.
 
 
 
