@@ -1,4 +1,4 @@
-AWS LEARNING REPOSITORY README.md 
+AWS, DEVOPS, GIT, GITHUB, LINUX, LEARNING REPOSITORY README.md 
 
 - Compute Services (EC2, Lightsail)
 - Storage Services (S3, EBS, EFS)
