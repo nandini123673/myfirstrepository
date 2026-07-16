@@ -1,4 +1,11 @@
-AWS, DEVOPS, GIT, GITHUB, LINUX, LEARNING REPOSITORY README.md 
+ This Repository contains my hands on practice and notes for AWS, DEVOPS, GIT, GITHUB, LINUX.
+
+ myfirstrepository/
+│── README.md
+│── AWS/README.md
+│── devops/README.md
+│── gitcommands/README.md
+└── linux/README.md
 
 AWS :
 - Compute Services (EC2, Lightsail)
@@ -35,3 +42,38 @@ Labs Included :
 - CloudWatch
 - Route 53
 - RDS
+
+DevOps
+- Jenkins
+- Docker
+- Kubernetes
+- Ansible
+- Maven
+
+
+Git & GitHub
+- Git Installation
+- Git Commands
+- Branching
+- Merging
+- Pull Requests
+- GitHub Repository
+
+
+ Linux
+- Linux Commands
+- File Permissions
+- Users & Groups
+- Shell Commands
+- vi Editor
+
+
+
+
+
+
+
+
+
+## 👩‍💻 Author
+*Nandini C*
