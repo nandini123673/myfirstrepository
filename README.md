@@ -9,7 +9,7 @@
 
 📂AWS :
 - Compute Services (EC2, Lightsail)
-- Storage Services (S3, EBS, EFS)
+- Storage Services (S3, EBS,)
 - Networking (VPC, Internet Gateway, NAT Gateway, VPC Peering)
 - Monitoring (CloudWatch)
 - AWS Identity and Access Management (IAM)
