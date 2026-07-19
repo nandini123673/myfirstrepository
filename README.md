@@ -22,10 +22,10 @@
 
 
 Labs Included :
- IAM
  EC2
- S3
+ IAM
  VPC
+ S3
  EBS
  AMI
  CloudWatch
@@ -35,10 +35,10 @@ Labs Included :
 
 
  AWS Services Used :
-- IAM
 - EC2
-- S3
+- IAM
 - VPC
+- S3 
 - CloudWatch
 - Route 53
 - RDS
