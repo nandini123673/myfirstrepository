@@ -362,7 +362,7 @@ light sail :
 
 
 
-search lightsail create instance 
+search lightsail create instance
 
 connect using ssh use the commands
 
@@ -377,6 +377,90 @@ sudo systemctl enable httpd
 sudo vi /var/www/html/index.html
 
 copy paste ipv4 address in google.see the output.
+
+
+
+
+
+LAB 10 : Load balancer and autoscaling lab: 
+
+
+
+Step 1: 
+
+
+
+log in to aws console
+
+launch instance in ec2 server using windows os
+
+connect ec2 instance
+
+connect ec2 instance using RDP client
+
+download remote desktop file,upload private key and get password create virtual machine
+
+search server manager and install create one text document inside inetpub wwroot give the name has index.html
+
+select instance click action select image and template option create image
+
+AMI is created.
+
+select snapshot option snapshot also created
+
+select autoscaling group click auto scaling group before we create  click launch template option 
+
+created launch template
+
+select autoscaling group and create auto scaling group using group name instance type keypair availability zone,
+
+select attach to a new load balancer,then select application load balancerselect internet facing 
+
+select new target grop
+
+click health check desired maximum and minimum 
+
+copy public ip and paste in google
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
