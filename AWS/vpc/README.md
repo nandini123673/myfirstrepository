@@ -80,19 +80,19 @@ LAB 5: Jump Server and NATGATEWAY in Linux machine
 
 
 
-LAB 1: Create vpc, subnet, Internet gate way and Routing table
+**LAB 1: Create vpc, subnet, Internet gate way and Routing table**
 
 
 
-Step 1: 
+Step 1:
 
 
 
 login AWS Console
 
-search VPC 
+search VPC
 
-Select regaion 
+Select regaion
 
 Click create VPC
 
@@ -128,20 +128,95 @@ Step 4 :
 
 
 
-Create a public route table inside route 
+Create a public route table inside route
 
-edit destination 0.0.0.0/0 through internet gateway 
-
-edit subnet association select and save
-
-
-
-Create a private route table inside route we cant access destination 
+edit destination 0.0.0.0/0 through internet gateway
 
 edit subnet association select and save
 
 
 
+Create a private route table inside route we cant access destination
+
+edit subnet association select and save
+
+
+
+**LAB 2: Configure EC2 machine with above created networks.**
+
+
+
+Step 1: 
+
+
+
+Create vpc
+
+create two subnets public subnet private subnet
+
+create internet gateway
+
+create route table
+
+
+
+
+
+Step 2: 
+
+
+
+select EC2 create two servers public server and private server
+
+
+
+instance name public server 
+
+select AMI amazon Linux
+
+instance type t2.micro
+
+create key pair
+
+edit network settings 
+
+select vpc
+
+select subnet1 or public subnet
+
+auto assign enable public ip
+
+create security group 
+
+launch instance
+
+
+
+
+
+Step 3 :
+
+
+
+instance name private server
+
+select AMI amazon Linux
+
+instance type t2.micro
+
+create key pair
+
+edit network settings
+
+select vpc
+
+select subnet2 or private subnet
+
+auto assign disable public ip
+
+create security group
+
+launch instance
 
 
 
@@ -161,6 +236,45 @@ edit subnet association select and save
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#x20;
 
 
 
