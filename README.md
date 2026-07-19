@@ -25,7 +25,19 @@ Labs Included :
  
  EC2 : 
  
+ LAB 1: Launching a sample website using virtual machine in windows.
+ LAB 2: Finding a instance type according to client requirement.
+ LAB 3: Vertical Scaling
+ LAB 4: Termination Protection
+ LAB 5: adding tags into the servers
+ LAB 6: Snapshot and AMI creation data migration
+ LAB 7: Hosting sample website using Linux
+ LAB 8: Cloud watch and light sail\\
+ LAB 9: Load balancer and auto scalling
+ 
  IAM
+
+ LAB 10: Identity access Management
 
  VPC :
 
@@ -38,7 +50,6 @@ Labs Included :
    LAB 4: Jump Server and NATGATEWAY in windows machine
 
    LAB 5: Jump Server and NATGATEWAY in Linux machine
-
 
  S3
  EBS
