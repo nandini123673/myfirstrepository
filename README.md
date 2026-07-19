@@ -22,7 +22,7 @@
 
 
 Labs Included :
- EC2
+ EC2 : 
  IAM
  VPC
  S3
