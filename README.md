@@ -22,9 +22,24 @@
 
 
 Labs Included :
+ 
  EC2 : 
+ 
  IAM
- VPC
+
+ VPC :
+
+   LAB 1: Create vpc, subnet, Internet gate way and Routing table
+
+   LAB 2: Configure EC2 machine with above created networks.
+
+   LAB 3: VPC Peering Connection.
+
+   LAB 4: Jump Server and NATGATEWAY in windows machine
+
+   LAB 5: Jump Server and NATGATEWAY in Linux machine
+
+
  S3
  EBS
  AMI
