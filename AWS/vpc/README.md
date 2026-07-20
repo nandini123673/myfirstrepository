@@ -224,7 +224,7 @@ Step 5:
 
 
 
-select public server connect using ssh 
+select public server connect using ssh
 
 copy server 2 private ip
 
@@ -324,7 +324,7 @@ Step 4:
 
 
 
-create vpc 
+create vpc
 
 select another regaion
 
@@ -388,9 +388,9 @@ Step 8:
 
 
 
-launch instance name has server 3 
+launch instance name has server 3
 
-selected vpc 
+selected vpc
 
 select subnet 3
 
@@ -420,9 +420,9 @@ Steap 10:
 
 
 
-select server 1 instance  and connect using ssh 
+select server 1 instance  and connect using SSH
 
-select another regaion server private ip copy private ip
+select another Regaion server private IP copy private IP
 
 paste  in sever 1 Linux machine using "ping private key"
 
@@ -430,7 +430,217 @@ paste  in sever 1 Linux machine using "ping private key"
 
 
 
+LAB 4 :Jump Server and Nat gateway in Windows:
 
+
+
+Step 1:
+
+create VPC
+
+select Regaion create VPC
+
+CIDR 10.0.0.0/16
+
+create VPC
+
+
+
+Step 2 :
+
+create subnet
+
+public subnet 
+
+selected VPC CIDR 10.0.1.0/24
+
+create subnet
+
+
+
+
+
+create subnet
+
+private subnet
+
+selected VPC CIDR 10.0.2.0/24
+
+Create subnet
+
+
+
+
+
+Step 3 :
+
+
+
+create internet gateway
+
+attach to VPC
+
+create 
+
+
+
+Step 4:
+
+
+
+
+
+Create route table
+
+public route table selected VPC
+
+edit routs 0.0.0.0/0
+
+edit subnet association click and save
+
+
+
+create route table 
+
+private route table selected VPC
+
+edit subnet association click and save
+
+
+
+
+
+Step 5:
+
+Launch instance using EC2
+
+
+
+give server name has public server
+
+select windows operating system
+
+create key pair and select instant type
+
+edit network settings 
+
+selected vpc
+
+select  Public subnet
+
+public ip enable
+
+create security group
+
+launch instance
+
+
+
+give server name has Private server
+
+select windows operating system
+
+create key pair and select instant type
+
+edit network settings
+
+selected VPC
+
+select Private subnet
+
+public IP disable
+
+create security group
+
+launch instance
+
+
+
+
+
+select public server and connect using RDP 
+
+select download remote desktop file and get password using password create virtual machine in windows
+
+host sample website using public ip in public server using server manager 
+
+copy public IP and paste in google 
+
+the public IP is work
+
+
+
+select private server and connect 
+
+the public IP is disable
+
+the virtual machine has no internet it is not connected
+
+
+
+private ec2 has no internet because no public IP
+
+we cant connect directly
+
+
+
+connect to the public windows ec2 using RDP
+
+from that public windows server open remote desktop connection (mstsc)
+
+enter the private IP of the private windows ec2
+
+enter the username and password 
+
+we are now connection in private server.
+
+
+
+
+
+Using Nat gate way we get internet in private server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LAB 5: jump Server and Natgateway in LINUX:
 
 
 
