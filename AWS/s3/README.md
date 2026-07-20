@@ -24,7 +24,7 @@ LAB 3: Versioning and Cross Regaion Replaction
 
 
 
-LAB 4: SNS and life cycle policy
+LAB 4: SNS and S3 life cycle policy
 
 
 
@@ -50,11 +50,11 @@ LAB 1: creating buckets uploading same files in the bucket and sharing with othe
 
 
 
-Step 1: 
+Step 1:
 
 
 
-log in to aws console search s3 
+log in to aws console search s3
 
 select buckets select create buckets
 
@@ -64,7 +64,7 @@ uncheck public access
 
 check acknowledge
 
-click create bucket 
+click create bucket
 
 
 
@@ -74,13 +74,13 @@ Step 2:
 
 click bucket
 
-select create folder option 
+select create folder option
 
-create folder 
+create folder
 
 upload files in same bucket
 
-select uploaded file click actions select move give destination 
+select uploaded file click actions select move give destination
 
 the file move to folder
 
@@ -94,7 +94,7 @@ click action
 
 edit storage class
 
-we can change storage class 
+we can change storage class
 
 
 
@@ -102,7 +102,7 @@ we can change storage class
 
 
 
-select object 
+select object
 
 click actions
 
@@ -136,7 +136,7 @@ click create bucket
 
 create bucket using unique bucket names
 
-unchek public access check  i acknowledge 
+unchek public access check  i acknowledge
 
 create two buckets
 
@@ -186,7 +186,7 @@ create policy
 
 
 
-users 
+users
 
 create users
 
@@ -238,9 +238,9 @@ create bucket
 
 add or upload files in to bucket
 
-open same file and edit save and upload same edit file in the bucket it is stored in same file 
+open same file and edit save and upload same edit file in the bucket it is stored in same file
 
-select object and delete 
+select object and delete
 
 it is saved in version
 
@@ -250,7 +250,7 @@ the data will come return
 
 
 
-it is recover 
+it is recover
 
 in version separate file also created
 
@@ -262,7 +262,7 @@ Cross regaion replication:
 
 
 
-Step 1: 
+Step 1:
 
 
 
@@ -280,7 +280,7 @@ Step2:
 
 
 
-select management 
+select management
 
 create replication rule
 
@@ -300,9 +300,447 @@ select one bucket
 
 add files or upload files
 
-open another bucket 
+open another bucket
 
 same file will be visible
+
+
+
+LAB 4: SNS and S3 life cycle policy
+
+
+
+Step 1:
+
+search s3 in console
+
+select s3 click create buckets
+
+give bucket name has unique
+
+uncheck public access check i acknowledge
+
+create bucket
+
+
+
+
+
+Step 2:
+
+
+
+search SNS in console
+
+create topicname
+
+ceate topic
+
+click topic copy ARN paste in notepad
+
+copypaste bucket name
+
+copy paste account id
+
+
+
+
+
+search in google iam policy for a sns destination topic
+
+
+
+copy paste in notepad
+
+copy paste arn and paste
+
+give bucket name
+
+bucket account owner id
+
+copy code
+
+
+
+select sns select topics edit access policy
+
+delete code paste new code
+
+create sns subscription
+
+
+
+give topic
+
+arn
+
+email
+
+create subscription
+
+goto email confirm subscription
+
+go to subscription confirmed
+
+
+
+open buckets
+
+select properties
+
+event notification
+
+create event name
+
+sns topic choose topic save changes
+
+
+
+
+
+open bucket
+
+upload
+
+add files
+
+uplosd
+
+mail check it will give notification
+
+
+
+LAB 5: Dynamo DB and Amazon Transcribe
+
+
+
+DynamoDB:
+
+
+
+Step 1:
+
+search dynamo db in console
+
+create table
+
+table name
+
+player id number
+
+player name string
+
+create table
+
+
+
+select table click actions
+
+id =1
+
+name=name
+
+add new attributrs
+
+create item
+
+
+
+click json view
+
+copy  paste in notepad edit paste
+
+create item
+
+click
+
+
+
+select filter option
+
+attribute name copy paste in table
+
+type
+
+value
+
+run
+
+
+
+
+
+AMAZON TRANSCRIBER:
+
+
+
+search s3 in console
+
+click buckets
+
+click create bucket
+
+uncheck public access
+
+i acknowledge
+
+create bucket
+
+upload audio file in to the bucket
+
+
+
+search amazon transcribe in console
+
+click transcription job
+
+create job
+
+give name select language
+
+select object
+
+create job
+
+select transcription jobs
+
+text is appear
+
+
+
+
+
+LAB 6: AWS CLI and RDS
+
+&#x20;AWS CLI
+
+
+
+Step 1:
+
+search cmd
+
+open 
+
+check aws version using the command aws --version
+
+go to console
+
+open security credentials
+
+create access key
+
+access key copy notepad paste
+
+copy paste regaion in notepad
+
+go to command prompt
+
+give a command aws configure
+
+copy paste key access key
+
+copy paste secret access key
+
+copy paste regaion
+
+
+
+give the command 
+
+
+
+aws s3 mb s3://bucketname
+
+bucket is created check in s3
+
+
+
+aws s3 rb s3://bucketname
+
+bucket is removed check in s3
+
+
+
+
+
+aws s3 ls
+
+list s3 buckets
+
+
+
+
+
+
+
+RDS:
+
+
+
+
+
+Step 1:
+
+
+
+Search RDS in console 
+
+create database
+
+seslect MySQL
+
+select free tair
+
+give master password
+
+confirm password
+
+give public access
+
+
+
+click additional configuration
+
+give initial database is admin
+
+create database
+
+view credentials copy username and password
+
+
+
+
+
+
+
+LAB 7: Static Website Hosting
+
+Step 1:
+
+
+
+creat bucket 
+
+give bucket name has a domain name
+
+uncheck public access
+
+check acknowledge
+
+bucket versioning enable
+
+create bucket
+
+
+
+Step 2:
+
+select stativ website code and paste in notepad the name is index.html
+
+select bucket and upload index.html file
+
+
+
+
+
+
+
+click properties 
+
+select static website hosting
+
+enable 
+
+index.html
+
+save changes
+
+
+
+
+
+click permissions
+
+create bucket policy
+
+search in google aws sample bucket policy
+
+hosting the static website
+
+setting permissions
+
+copy code and paste in notepad change bucket name
+
+copy code and paste in bucket policy
+
+
+
+search route 53 in console
+
+click hosted zone
+
+create hosted zone
+
+give domain name
+
+create hosted zone
+
+
+
+select hosted zone
+
+copy values 4lines of code and paste it in notepad and remove last dots
+
+
+
+
+
+
+
+go to godaddy domain select domain select manage dns click nameservers and add 4 nameservers paste and continue
+
+
+
+
+
+click hosted zone
+
+create record
+
+enable Alias
+
+select routrtraffic
+
+select alias to s3 end point
+
+cfhoose regaion select amazon create record
+
+&#x20; copy paste domain name in google website will appear on screen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -379,42 +817,4 @@ same file will be visible
 
 
 &#x20;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
