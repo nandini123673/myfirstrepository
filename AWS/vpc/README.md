@@ -146,7 +146,7 @@ edit subnet association select and save
 
 
 
-Step 1: 
+Step 1:
 
 
 
@@ -162,7 +162,7 @@ create route table
 
 
 
-Step 2: 
+Step 2:
 
 
 
@@ -170,7 +170,7 @@ select EC2 create two servers public server and private server
 
 
 
-instance name public server 
+instance name public server
 
 select AMI amazon Linux
 
@@ -178,7 +178,7 @@ instance type t2.micro
 
 create key pair
 
-edit network settings 
+edit network settings
 
 select vpc
 
@@ -186,7 +186,7 @@ select subnet1 or public subnet
 
 auto assign enable public ip
 
-create security group 
+create security group
 
 launch instance
 
@@ -217,6 +217,324 @@ auto assign disable public ip
 create security group
 
 launch instance
+
+
+
+Step 5:
+
+
+
+select public server connect using ssh 
+
+copy server 2 private ip
+
+ping server2 private ip in server 1 machine
+
+
+
+
+
+**LAB 3: Peering Connection :connect one regaion to another regaion**
+
+
+
+
+
+Step 1:
+
+
+
+Create vpc
+
+create two subnets public subnet private subnet
+
+create internet gateway attach to vpc
+
+create route table two routs public route and private route
+
+connect public route to internet gate way edit subnet association
+
+edit subnet association in private
+
+
+
+
+
+Step 2:
+
+
+
+select EC2 create two servers public server and private server
+
+
+
+instance name public server
+
+select AMI amazon Linux
+
+instance type t2.micro
+
+create key pair
+
+edit network settings
+
+select vpc
+
+select subnet1 or public subnet
+
+auto assign enable public ip
+
+create security group
+
+launch instance
+
+
+
+
+
+Step 3 :
+
+
+
+instance name private server
+
+select AMI amazon Linux
+
+instance type t2.micro
+
+create key pair
+
+edit network settings
+
+select vpc
+
+select subnet2 or private subnet
+
+auto assign disable public ip
+
+create security group
+
+launch instance
+
+
+
+
+
+Step 4:
+
+
+
+create vpc 
+
+select another regaion
+
+CIDR 172.16.0.0/16
+
+CREATE VPC
+
+
+
+Step 5 :
+
+
+
+create subnet
+
+vpc id
+
+give name has subnet 3
+
+CIDR 172.16.1.0/24
+
+create subnet
+
+
+
+Step 6:
+
+
+
+create internet gateway
+
+attach to selected vpc
+
+
+
+
+
+Step 7:
+
+
+
+Create Route Table
+
+edit routes
+
+CIDR 0.0.0.0/0
+
+internet gateway
+
+create routes
+
+
+
+edit subnet association
+
+click and save
+
+
+
+Step 8:
+
+
+
+launch instance name has server 3 
+
+selected vpc 
+
+select subnet 3
+
+public ip enable
+
+add security group
+
+launch instance
+
+
+
+Step 9 : Peering connection one regaion server to another regaion server
+
+
+
+select peering connection option
+
+select sender  or requester vpc id
+
+select accepter vpc id
+
+create vpc connection
+
+
+
+Steap 10:
+
+
+
+select server 1 instance  and connect using ssh 
+
+select another regaion server private ip copy private ip
+
+paste  in sever 1 Linux machine using "ping private key"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -275,40 +593,4 @@ launch instance
 
 
 &#x20;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
