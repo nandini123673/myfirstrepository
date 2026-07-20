@@ -60,8 +60,20 @@ Labs Included :
    LAB 15: Jump Server and NATGATEWAY in Linux machine
 
  S3
- EBS
- CloudTrail
+ 
+   LAB 16: creating buckets uploading same files in the bucket and sharing with others
+
+   LAB 17: Creating multiple buckets giving access for particular bucket
+
+   LAB 18: Versioning and Cross Regaion Replaction
+
+   LAB 19: SNS and life cycle policy
+
+   LAB 20: Dynamo DB and Amazon Transcribe
+
+   LAB 21: AWS CLI and RDS
+
+   LAB 22: Static Website Hosting
 
 
  AWS Services Used :
