@@ -450,7 +450,7 @@ Step 2 :
 
 create subnet
 
-public subnet 
+public subnet
 
 selected VPC CIDR 10.0.1.0/24
 
@@ -480,7 +480,7 @@ create internet gateway
 
 attach to VPC
 
-create 
+create
 
 
 
@@ -500,7 +500,7 @@ edit subnet association click and save
 
 
 
-create route table 
+create route table
 
 private route table selected VPC
 
@@ -512,7 +512,7 @@ edit subnet association click and save
 
 Step 5:
 
-Launch instance using EC2
+Launch instance and create vm  using EC2
 
 
 
@@ -522,7 +522,7 @@ select windows operating system
 
 create key pair and select instant type
 
-edit network settings 
+edit network settings
 
 selected vpc
 
@@ -556,21 +556,19 @@ launch instance
 
 
 
-
-
-select public server and connect using RDP 
+select public server and connect using RDP
 
 select download remote desktop file and get password using password create virtual machine in windows
 
-host sample website using public ip in public server using server manager 
+host sample website using public ip in public server using server manager
 
-copy public IP and paste in google 
+copy public IP and paste in google
 
 the public IP is work
 
 
 
-select private server and connect 
+select private server and connect
 
 the public IP is disable
 
@@ -590,7 +588,7 @@ from that public windows server open remote desktop connection (mstsc)
 
 enter the private IP of the private windows ec2
 
-enter the username and password 
+enter the username and password
 
 we are now connection in private server.
 
@@ -602,45 +600,185 @@ Using Nat gate way we get internet in private server
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 LAB 5: jump Server and Natgateway in LINUX:
+
+
+
+Step 1:
+
+create VPC
+
+select Regaion create VPC
+
+CIDR 10.0.0.0/16
+
+create VPC
+
+
+
+Step 2 :
+
+create subnet
+
+public subnet
+
+selected VPC CIDR 10.0.1.0/24
+
+create subnet
+
+
+
+
+
+create subnet
+
+private subnet
+
+selected VPC CIDR 10.0.2.0/24
+
+Create subnet
+
+
+
+
+
+Step 3 :
+
+
+
+create internet gateway
+
+attach to VPC
+
+create
+
+
+
+Step 4:
+
+
+
+
+
+Create route table
+
+public route table selected VPC
+
+edit routs 0.0.0.0/0
+
+edit subnet association click and save
+
+
+
+create route table
+
+private route table selected VPC
+
+edit subnet association click and save
+
+
+
+
+
+
+
+Step 5:
+
+Launch instance 
+
+
+
+give server name has public server
+
+select amazon Linux operating system
+
+create key pair and select instant type
+
+edit network settings
+
+selected VPC
+
+select  Public subnet
+
+public ip enable
+
+create security group
+
+launch instance
+
+
+
+give server name has Private server
+
+select Amazon Linux operating system
+
+create key pair and select instant type
+
+edit network settings
+
+selected VPC
+
+select Private subnet
+
+public IP disable
+
+create security group
+
+launch instance
+
+
+
+connect public ec2 instance through SSH
+
+the connection is successful.
+
+
+
+
+
+in public ec2 instance connection we give private ip 
+
+copy private ipv4 address 
+
+give command chmod 700 privatevm.pem
+
+
+
+
+
+
+
+open nat gate way
+
+create name using public
+
+allocate 
+
+create nat gate way
+
+
+
+
+
+route table open private route table 
+
+edit routs 0.0.0.0/0
+
+connected through nat gatway
+
+now we get internet in private server
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
