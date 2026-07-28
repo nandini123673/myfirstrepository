@@ -1,0 +1,22 @@
+Started by GitHub push by nandini123673
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/job5
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/nandini123673/myfirstrepository.git
+ > git init /var/lib/jenkins/workspace/job5 # timeout=10
+Fetching upstream changes from https://github.com/nandini123673/myfirstrepository.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/nandini123673/myfirstrepository.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/nandini123673/myfirstrepository.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 902330934fa77812999e17049c00e9f4b814e5a8 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 902330934fa77812999e17049c00e9f4b814e5a8 # timeout=10
+Commit message: "this is added jenkins jobs"
+First time build. Skipping changelog.
+Finished: SUCCESS

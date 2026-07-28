@@ -1,0 +1,19 @@
+Started by GitHub push by nandini123673
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/job5
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/job5/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nandini123673/myfirstrepository.git # timeout=10
+Fetching upstream changes from https://github.com/nandini123673/myfirstrepository.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/nandini123673/myfirstrepository.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 18e441aae6f81fce360bb397c10777cb019322e0 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 18e441aae6f81fce360bb397c10777cb019322e0 # timeout=10
+Commit message: "this is commit"
+ > git rev-list --no-walk 3a9645d9547430696547cbe205a91e5f570b0594 # timeout=10
+Finished: SUCCESS
