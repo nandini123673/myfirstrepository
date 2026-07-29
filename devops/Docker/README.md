@@ -61,16 +61,18 @@ LAB 5: dockarize java web application
 LAB 6: dockerize springboot application
 
 
-
-LAB 7: Docker Volumes
-
+LAB 7: dockerize python application
 
 
-LAB 8: Docker Networks
+LAB 8: Docker Volumes
 
 
 
-LAB 9: Docker Compose and Springboot With my Sql
+LAB 9: Docker Networks
+
+
+
+LAB 10: Docker Compose and Springboot With my Sql
 
 
 
@@ -83,18 +85,7 @@ LAB 9: Docker Compose and Springboot With my Sql
 LAB 1: Install Docker using Ec2 amazon Linux
 
 
-
-
-
-
-
 Step 1 :
-
-
-
-
-
-
 
 login to aws management console
 
@@ -116,10 +107,6 @@ launch instance
 
 
 
-
-
-
-
 Step 2:
 
 
@@ -133,19 +120,6 @@ Open Linux terminal in mobaxterm
 
 
 install docker software in Linux using below commands
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 \* \*\*sudo yum update -y\*\*
@@ -672,14 +646,34 @@ Note: Enable 8080 port in EC2 VM security Groups inbound run
 
 
 
-
-
 \# Check docker container logs
 
 
 
 $ docker logs <container-id>
 
+
+
+LAB 6 :Python with Docker
+
+Step 1: Launch Instance connect mabaxterm 
+
+Step 2: Install Docker on Linux terminal
+
+Step 3: install git
+
+$ git clone 
+
+$ cd folder
+
+$ docker build -t imagename.
+
+$ docker run -p 5000:5000 -d imagename
+
+
+=> Access Application like below
+
+	URL : http://public-ip:5000/
 
 
 
