@@ -677,6 +677,193 @@ $ docker run -p 5000:5000 -d imagename
 
 
 
+LAB 7:Docker Volumes 
+
+stateless container: data will be deleted after container deleted
+
+
+Step 1:
+log in to AWS console
+create instance launch instance using amazon Linux
+connect instance using public ip into mobaxterm terminal
+
+Step 2:
+update and install docker
+check docker is installed or not
+
+create image name 
+docker pull nginx
+
+check image 
+docker images
+
+run image in container
+docker run --name c1 -d nginx
+
+check container is running
+docker ps 
+
+duplicate container c1 name change
+
+go to host give sudo su
+
+go to container create files
+touch file{1..10}.txt
+ls -l
+display files
+
+
+go to host 
+
+find / -name file1.txt the files are stored in host machine particular location 
+cd copy paste /var to dif/
+ls -l displayed all files
+
+
+docker ps 
+docker rm -f c1
+container is deleted
+check data ls data also deleted
+check in host machine and check in container data deleted
+
+
+
+Statefull Container : using docker volume we can create statefull container there are three types 
+
+anonymous volume:    docker run -it --name c2 -v /test nginx/bin/bash
+named volume:        docker run -it  --name c3 -v my-volume:/test1 nginx/bin/bash
+bind mounts :        docker run -it --name c4 -v /home/ec2-user/nandini:/dir2 nginx /bin/bash
+
+
+1 Ananymous volume:
+
+
+cd ~ go inside the home directory
+give sudo su
+
+Step 1 : docker volume ls
+
+docker run -it iiname c2 -v /test nginx/bin/bash
+container created 
+duplicate
+create host machine
+go to host 
+give docker ps 
+
+go inside container
+ls
+cd test/
+
+
+host docker volume ls
+docker inspectcopypaste volume id
+copy mountpoint location and paste in notepad
+cd paste
+ls
+touch nandini{}.txt
+ls-l
+
+
+go to container
+ls -l
+touch container2files{}.txt
+ls-l created filkes
+ 
+go to host check ls -l
+appear files
+docker ps
+docker run -f c2
+docker ps container deleted 
+ls
+data is display 
+if container is deleted data is safe using anonymous container
+
+
+2 Named volume: if container is deleted data is available 
+
+
+
+3 Bound mounts directly link directories between host and container
+
+give command 
+
+docker run -it --name c4 -v /home/ec2-user/nandini:/dir2 nginx /bin/bash
+container is created container 4 machine
+duplicate
+host machine host 
+go to container
+ls
+cd dir2/
+ls
+touch nandini{1..10}.php
+ls -l
+files are created 
+
+check in host the files are created both 
+ls -l
+docker ps container display
+docker rm -f c4
+container is deleted
+
+ls data is available...
+
+
+
+LAB 8 : Docker Networks:
+
+
+connect ec2 instance using mobaxterm
+
+install docker 
+
+check docker installed or not docker -v (by default networks are created) to check docker network ls
+
+docker inspect bridge       to check containers
+
+go to docker hub select one container 
+
+paste docker pull paste
+
+docker images
+
+go to docker hub select one container 
+
+paste docker pull paste
+
+docker images
+
+docker run -p 8080:8080 -d copyimageid
+docker run -p 8081:8080 -d imagenamepaste 
+
+same port is work in containers but different host port
+
+docker ps 
+
+docker inspect bridge
+copy paste containers ip address into notepad
+
+
+docker ps
+
+docker exec -it containerid /bin/bash
+
+ping second container ip address
+
+we get responce 
+
+exit
+
+
+docker ps 
+
+docker exec -it containerid /bin/bash
+
+ping first container ip address
+
+without ping we can install ping using apt update && apt install iputils-ping -y
+ ping containerip address
+
+we get responce.
 
 
 
