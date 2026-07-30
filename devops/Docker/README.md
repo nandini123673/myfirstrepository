@@ -868,6 +868,125 @@ we get responce.
 
 
 
+LAB 10: Docker Compose and Spring boot With my Sql
+
+log in to aws console
+
+launch instance using amazon Linux connect instance using instance public ip connect mobAXTERM.
+
+Install docker 
+
+install git
+
+install maven
+ 
+another way to install commands
+vi nandini.sh
+copy all the insalls in one file
+sh nandini.sh
+
+
+git -v
+mvn -v
+docker -v
+
+docker-compose -v it is a tool we want to install
+
+copy paste docker compose install
+
+exit
+
+
+git clone 
+
+cd inside the folder
+
+mvn clean package
+
+docker build spring-boot-mysql-app .
+
+docker images
+
+ls
+docker-compose up -d
+cat docker-compose.yml
+docker network ls
+docker ps
+
+
+edit inbound role 8080 custom tcp
+
+public ip copy:8080
+
+
+
+docker ps
+copy 
+docker exec -it paste /bin/bash
+MySQL -u root -proot
+show databases;
+use sbms;
+show tables;
+select * from book;
+
+go to browser output
+add 
+
+terminal
+select * from book;
+
+
+exit
+
+exit
+
+pwd
+
+docker ps
+
+docker-compose down
+
+docker ps
+
+docker ps -a
+
+ls
+
+cd ..
+rm -rf *
+
+ls
+
+
+
+
+easiest way:
+
+vi nandini.sh
+
+#! bin/bash
+
+git clone
+
+cd
+
+docker build
+
+do -compose up -a
+
+sh nandini.sh
+
+
+
+
+
+
+
+
+
+ 
+
+
 
 
 
