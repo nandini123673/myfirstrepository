@@ -1,0 +1,2 @@
+echo "hai this is linux lab"
+hai 
