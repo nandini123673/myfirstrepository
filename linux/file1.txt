@@ -1,0 +1,2 @@
+hai this is linux folder
+created fot to store linux commands
