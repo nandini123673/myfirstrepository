@@ -1,0 +1,8 @@
+pwd
+mkdir linuxpractice
+cd linuxpractice
+touch file1.txt file2.txt file3.txt
+ls
+cat > file1.txt
+hai this is my first class
+
