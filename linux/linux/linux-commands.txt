@@ -1,9 +1,0 @@
-pwd
-ls
-mkdir linux
-cd linux
-touch linux.txt
-echo "hai"
-cat linux.txt
-cp linux.txt aws.txt
-mv aws.txt devops.txt

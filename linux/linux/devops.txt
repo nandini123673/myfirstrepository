@@ -1,0 +1,1 @@
+echo "hai this is aws" > aws.txt
