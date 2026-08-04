@@ -1,0 +1,41 @@
+mkdir aws   create folder
+
+cd aws inside the folder
+
+touch file1.txt file2.txt file3.txt
+
+ls list curent dairectory or files 
+
+cat > file1.txt add content
+
+hai this is my linux terminal
+
+cat file1.txt display the content
+
+touch file4.txt
+
+ls -l  l0ng listing files
+
+ls - a show hidden files
+
+
+cp file1.txt file2.txt copy one file to another file
+
+mv file1.txt file2.txt move or rename a filename
+
+pwd present working dairectory
+
+rm file1.txt remove file name
+
+rmdir devops remove a empty dairectory
+
+clear clear the screen
+
+history command history
+
+echo "hai" to print the content
+
+ls -ld display dairectory
+
+
+

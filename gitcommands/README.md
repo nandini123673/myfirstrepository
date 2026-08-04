@@ -5,44 +5,65 @@
  README.md: Documentation about my git practice.
 
 Git installation
+
 Git initialization using git init command
+
 Git status
+
 Git add using git add command
+
 Git commit using Git commit -m ""
+
 Git push
 
 
 COMMANDS :
 
-## git restore: The git restore command is used to undo the cintents are discard changes in aworking dairectory
+## git restore: 
+
+   The git restore command is used to undo the cintents are discard changes in aworking dairectory
+   
    git restore --staged restore.txt   after git add to unstage staging area to working area
 
 Syntax : 
-        git restore  undo or remove the content in working directory
-        git restore --staged restore.txt after git add to unstage staging area to working area
+    
 
-Steps:
-Created a GitHub Repository. "myfirstrepository"
-Initialized a local git repository using "git init"
-created restore.txt file using touch restore.txt.
-add content to restore.txt using vi.restore.txt.to check git status it is modified 
-give a command  git restore restore.txt the content is undo
-add content a file then move to staging area before commit we use git restore --staged restore.txt the stage is moved to working area from staging area
-git add command and git commit commands used to add and commit git add restore.txt and git commit -m ""
-pushed the repository to git hub using git push.
+git restore filename touch file1.txt
 
-vi restore.txt
-add content
-git restore restore.txt (content remove from working dairectory)
+add content vi file1.txt
 
-vi restore.txt
-add content
-git add restore.txt
-git restore --staged restore.txt(changes to workkkking area from staging area)
-git status
-git add restore.txt
-git commit -m "this commit changes"
+git add
+
+git commit
+
 git push
+
+cat file1.txt
+
+vi file1.txt
+
+edit add new content
+
+cat file1.txt display new line and old line
+
+git restore file1.txt
+
+cat file1.txt only old line is display undo changes in working dairectory for tracked files.
+
+
+git restore –staged filename : 
+
+to discard changes from staging area to working area 
+
+touch file1.txt
+
+vi file1.txt
+
+git add file1.txt
+
+reverse back to working area
+
+git restore  --staged file1.txt
 
 
 ## git log : it is used to display the commit history of a git repository. It shows all the commits made in the repository.
