@@ -1,20 +1,92 @@
-##### **This Repository contains my hands on practice and notes for AWS, DEVOPS, GIT, GITHUB, LINUX.**
+##### **This Repository contains my hands on practice and notes for AWS, DEVOPS, GIT, GITHUB, LINUX.
+
+AWS : Project: "Static Website Hosting" using Route53,s3,godaddy domain
+
+myfirstrepository/**
+
+Project Structure
+
+│──StaticWebsiteHosting/
+             │── index.html
+             │── style.css
+             │── script.js
+             │── screenshots/
+│── README.md**
 
 
+myfirstrepository/**
 
-###### **myfirstrepository/**
+1    ###### **│── AWS/README.md**
 
-###### **│── README.md**
+2    ###### **│── devops/README.md**
 
-###### **│── AWS/README.md**
+3    ###### **│── gitcommands/README.md**
 
-###### **│── devops/README.md**
+4    ###### **└── linux/README.md**
 
-###### **│── gitcommands/README.md**
-
-###### **└── linux/README.md**
+5    ###### **│── README.md**
 
 
+# AWS Static Website Hosting Project
+
+## Project Overview
+This project demonstrates how to host a static website using Amazon S3 , route 53  and  godaddy domain  access it through a web browser.
+
+## AWS Services Used
+- Amazon S3
+- Route 53 (Optional)
+- GoDaddy Domain (Optional)
+
+## Prerequisites
+- AWS Account
+- Static website files (index.html, CSS, JavaScript)
+- Domain name (Optional)
+
+## Steps Performed
+
+### Step 1: Create an S3 Bucket
+- Log in to the AWS Management Console.
+- Open Amazon S3.
+- Click **Create bucket**.
+- Enter a unique bucket name.
+- Select the AWS Region.
+- Disable **Block all public access**.
+- Create the bucket.
+
+### Step 2: Upload Website Files
+- Open the bucket.
+- Click **Upload**.
+- Upload:
+  - index.html
+  - style.css
+  - script.js
+- Click **Upload**.
+
+### Step 3: Enable Static Website Hosting
+- Open the bucket.
+- Go to **Properties**.
+- Select **Static website hosting**.
+- Enable it.
+- Set:
+  - Index document: index.html
+  - Error document: error.html (optional)
+- Save the changes.
+
+### Step 4: Configure Bucket Policy
+Add a bucket policy to allow public read access to the website files.
+
+### Step 5: Test the Website
+- Copy the S3 Website Endpoint.
+- Open it in a web browser.
+- Verify that the website loads successfully.
+
+select route53 and create hosted zone
+copy nameservers and paste it in godady dns nameservers
+select hostedzone in route53 create records
+
+
+## Output
+The static website is successfully hosted using Amazon S3 and is accessible through the website endpoint.
 
 ###### **📂AWS :**
 
@@ -46,15 +118,12 @@
 * GitHub Account Creation= Repository creation
 
 
-
 ###### **📂Linux**
 
-* Linux Commands
-
+* Linux Commands:
 
 
 ###### **📂AWS :**
-
 
 
 **EC2 :**
@@ -79,8 +148,6 @@
 
 **VPC** :
 
-
-
 * LAB 11: Create vpc, subnet, Internet gate way and Routing table
 * LAB 12: Configure EC2 machine with above created networks.
 * LAB 13: VPC Peering Connection.
@@ -90,8 +157,6 @@
 
 
 **S3**
-
-
 
 * LAB 16: creating buckets uploading same files in the bucket and sharing with others
 * LAB 17: Creating multiple buckets giving access for particular bucket
@@ -160,6 +225,9 @@
 * Operators,
 * Functions ,
 * Crontab
+
+
+
 
 
 
