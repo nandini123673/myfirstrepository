@@ -86,7 +86,9 @@ Add a bucket policy to allow public read access to the website files.
 - Verify that the website loads successfully.
 
 select route53 and create hosted zone
+
 copy nameservers and paste it in godady dns nameservers
+
 select hostedzone in route53 create records
 
 
