@@ -6,7 +6,7 @@ myfirstrepository/**
 
 Project Structure
 
-│──StaticWebsiteHosting/
+ │──StaticWebsiteHosting/
 
              │── index.html
              
@@ -16,20 +16,20 @@ Project Structure
              
              │── screenshots/
              
-│── README.md**
+ │── README.md**
 
 
 myfirstrepository/**
 
-1    ###### **│── AWS/README.md**
+ │── AWS/README.md**
+ 
+ │── devops/README.md**
 
-2    ###### **│── devops/README.md**
+ │── gitcommands/README.md**
 
-3    ###### **│── gitcommands/README.md**
+ └── linux/README.md**
 
-4    ###### **└── linux/README.md**
-
-5    ###### **│── README.md**
+ │── README.md**
 
 
 # AWS Static Website Hosting Project
