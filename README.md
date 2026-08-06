@@ -97,6 +97,11 @@ select hostedzone in route53 create records
 ## Output
 The static website is successfully hosted using Amazon S3 and is accessible through the website endpoint.
 
+
+
+
+
+
 ###### **📂AWS :**
 
 * Compute Services (EC2, Lightsail)
@@ -113,6 +118,8 @@ The static website is successfully hosted using Amazon S3 and is accessible thro
 
 
 
+
+
 ###### **📂DEVOPS: Jenkins, Ansible, Docker, Kubernetes**
 
 * Jenkins : ubantu 24.04, java 21, jenkins
@@ -121,10 +128,12 @@ The static website is successfully hosted using Amazon S3 and is accessible thro
 * Kubernates :
 * 
 
+
 ###### **📂Git \& GitHub**
 
 * Git Installation= git commands
 * GitHub Account Creation= Repository creation
+
 
 
 ###### **📂Linux**
@@ -132,8 +141,8 @@ The static website is successfully hosted using Amazon S3 and is accessible thro
 * Linux Commands:
 
 
-###### **📂AWS :**
 
+###### **📂AWS :**
 
 **EC2 :**
 
@@ -152,7 +161,6 @@ The static website is successfully hosted using Amazon S3 and is accessible thro
 **IAM**
 
 * LAB 10: Identity access Management
-
 
 
 **VPC** :
@@ -178,8 +186,6 @@ The static website is successfully hosted using Amazon S3 and is accessible thro
 
 
 ###### **📂DevOps**
-
-
 
 **Jenkins :**
 
@@ -211,6 +217,12 @@ The static website is successfully hosted using Amazon S3 and is accessible thro
 
 
 **Kubernetes:**
+
+Created with Pods, Deployments, Replica Sets, Services, Labels, Selectors, and YAML manifests.
+
+Performed Rolling Updates and basic cluster management using kubectl.
+
+Terraform (IaC).
 
 
 
