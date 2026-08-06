@@ -1,0 +1,30 @@
+Static website hosting :using s3 ,route 53 ,go daddy domain 
+
+
+what is Static website hosting ?
+
+In AWS we can host a static website using amazon s3 (simple storage service)
+
+
+how it works?
+
+Create an s3 bucket 
+to uncheck block all public access and check acknowledgement
+upload html css js and image files to bucket
+select properties and enable static website hosting
+select permissions attach bucket json policy
+
+access the website using the s3 website endpoint 
+
+or
+
+map our own domain using services such as amazon route 53
+
+
+select route53 in that create hosted zones 
+copy route values paste it in godaddy domain name servers
+select hosted zone and create records
+
+copy paste domain name in browser http://domainname
+
+
