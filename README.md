@@ -7,6 +7,7 @@ myfirstrepository/**
 Project Structure
 
 │──StaticWebsiteHosting/
+
              │── index.html
              
              │── style.css
