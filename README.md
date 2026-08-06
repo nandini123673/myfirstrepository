@@ -8,9 +8,13 @@ Project Structure
 
 │──StaticWebsiteHosting/
              │── index.html
+             
              │── style.css
+             
              │── script.js
+             
              │── screenshots/
+             
 │── README.md**
 
 
