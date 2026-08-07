@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pods
+  labels:
+    team: devops
+    env: microdegree
+    test: aws
+    select: linu
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx
+
