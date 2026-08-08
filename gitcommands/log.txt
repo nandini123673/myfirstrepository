@@ -1,0 +1,2 @@
+hai this is a type of git command
+it is used for display the commit history
