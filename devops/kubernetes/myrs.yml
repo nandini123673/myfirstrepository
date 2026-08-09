@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: replicaset
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      myname: sumeet
+  template:
+    metadata:
+      name: tomcat-nginx-2
+      labels:
+        myname: sumeet
+    spec:
+      containers:
+      - name: tomcat
+        image: tomcat:9
