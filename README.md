@@ -268,10 +268,5 @@ Terraform (IaC).
 
 
 
-
-
-
-
-
 ## 👩‍💻 Author
 *Nandini C*
