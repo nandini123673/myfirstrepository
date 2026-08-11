@@ -119,7 +119,6 @@ The static website is successfully hosted using Amazon S3 and is accessible thro
 
 
 
-
 ###### **📂DEVOPS: Jenkins, Ansible, Docker, Kubernetes**
 
 * Jenkins : ubantu 24.04, java 21, jenkins
