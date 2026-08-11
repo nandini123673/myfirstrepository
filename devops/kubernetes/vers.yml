@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mydeployments
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      name: deployment
+  template:
+    metadata:
+      name: testpod
+      labels:
+        name: deployment
+    spec:
+      containers:
+        - name: c00
+          image: centos
+          command: ["/bin/bash", "-c", "while true; do echo HELLO NANDINI; sleep 5; done"]

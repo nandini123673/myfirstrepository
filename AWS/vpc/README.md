@@ -5,11 +5,7 @@ Service VPC (Virtual Private Cloud): It is a networking service in aws,
 to create our own private network in aws where we can launch instances like ec2 instances securely.
 
 
-
-
-
 Components of a VPC
-
 
 
 CIDR Block – Defines the IP address range (e.g., 10.0.0.0/16).
