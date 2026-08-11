@@ -33,6 +33,7 @@ myfirstrepository/**
  │── README.md**
 
 
+
 # AWS Static Website Hosting Project
 
 ## Project Overview
@@ -95,6 +96,7 @@ select hostedzone in route53 create records
 
 ## Output
 The static website is successfully hosted using Amazon S3 and is accessible through the website endpoint.
+
 
 
 
