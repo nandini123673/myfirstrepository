@@ -1,6 +1,5 @@
 ##### **This Repository contains my hands on practice and notes for AWS, DEVOPS, GIT, GITHUB, LINUX.
 
-
 AWS : Project: "Static Website Hosting" using Route53,s3,godaddy domain
 
 
