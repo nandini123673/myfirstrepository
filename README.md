@@ -20,7 +20,6 @@ Project Structure
              
  │── README.md**
 
-
 myfirstrepository/**
 
  │── AWS/README.md**
