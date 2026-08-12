@@ -43,11 +43,11 @@ Rename one is Master and Another one is Worker
 
 Master
 
-* ssh-keygen-t ed25519
+* ssh-keygen -t ed25519
 * enter
 * enter
 * enter
-* cat \~/.ssh/id\_ed25519.pub
+* cat ~/.ssh/id_ed25519.pub
 * copy password
 
 
@@ -56,11 +56,11 @@ Master
 
 Worker
 
-* mkdir -p \~!/.ssh
-* nano \~/.ssh/authorized\_keys
+* mkdir -p ~/.ssh
+* nano ~/.ssh/authorized_keys
 * paste password in editor save using control+o enter exit control+x
-* chmod 700 \~/.ssh
-* chmod 600b \~/.ssh/authorized\_keys 
+* chmod 700 ~/.ssh
+* chmod 600b ~/.ssh/authorized_keys 
 
 
 
@@ -100,9 +100,9 @@ Create inventory file
 
 open editor in that type
 
-* \[workers]
+[workers]
 
-&#x20;  worker private ip ansible-user=ubuntu
+worker private ip ansible-user=ubuntu
 
 control+0 for save then enter
 
@@ -117,7 +117,6 @@ control+x for exit
 
 or
 
-&#x20; 
 
 check if Ansible is Working 
 
