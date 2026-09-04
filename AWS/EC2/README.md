@@ -1,7 +1,6 @@
 AWS LEARNING REPOSITORY README.md:::
 
 
-
 LAB 1: Launching a sample website using virtual machine in windows.
 
 LAB 2: Finding a instance type according to client requirement.
