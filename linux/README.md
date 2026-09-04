@@ -1,9 +1,6 @@
 LINUX:
 
 
-
-
-
 * Linux commands:
 
 

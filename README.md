@@ -1,6 +1,5 @@
 ##### **This Repository contains my hands on practice and notes for AWS, DEVOPS, GIT, GITHUB, LINUX.
 
-
 AWS : Project: "Static Website Hosting" using Route53,s3,godaddy domain
 
 
@@ -116,7 +115,6 @@ The static website is successfully hosted using Amazon S3 and is accessible thro
 * DNS (Route 53)
 * Security and Logging (CloudTrail)
 * Static Website Hosting
-
 
 
 

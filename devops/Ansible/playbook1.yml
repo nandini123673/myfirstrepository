@@ -1,0 +1,22 @@
+---
+- name: my-playbook
+  hosts: all
+  become: true
+  tasks:
+    - name: creating a folder
+      file:
+        name: ansible-test
+        path: /root/
+        state: directory
+        mode: "0777"
+    - name: creating a file
+      file:
+        path: /root/ansible-test/myfile
+        state: touch
+        mode: "0777"
+    - name: adding a content to a file
+      copy:
+        dest: /root/ansible-test/myfile
+        content: |
+                 hello to all devops teams
+
