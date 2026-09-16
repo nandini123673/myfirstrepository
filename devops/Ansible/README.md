@@ -17,8 +17,6 @@ password less connection between two servers
 
 LAB 1 :
 
-
-
 Passwordless connection between two servers 
 
 Install Ansible on ubuntu 24.04 
