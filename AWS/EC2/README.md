@@ -27,11 +27,6 @@ LAB 10: Load balancer and auto scalling
 
 
 
-
-
-
-
-
 Service :EC2
 
 
