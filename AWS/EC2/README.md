@@ -1,6 +1,5 @@
 AWS LEARNING REPOSITORY README.md:::
 
-
 LAB 1: Launching a sample website using virtual machine in windows.
 
 LAB 2: Finding a instance type according to client requirement.
@@ -20,6 +19,10 @@ LAB 8: Identity access Management
 LAB 9: Cloud watch and light sail\\
 
 LAB 10: Load balancer and auto scalling
+
+
+
+
 
 
 
